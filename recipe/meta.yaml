@@ -1,6 +1,5 @@
 {% set version = '1.0.13' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-egcm
@@ -13,8 +12,7 @@ source:
   sha256: 7414301865998396d6fac58c522c7352d716102138090b80f969a7d08f83bf9a
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
